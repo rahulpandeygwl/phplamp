@@ -2,7 +2,7 @@
 
 
 <project name="ALM Task Manager" default="build">
-<property name="toolsdir" value="bin/" />
+<property name="toolsdir" value="vendor/bin/" />
 
  <target name="build" depends="prepare,phploc,pdepend,phpmd,phpmd-ci,phpcs,phpcs-ci,phpunit,phpdox"/>
 
