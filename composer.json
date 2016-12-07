@@ -29,13 +29,7 @@
 		"files": [
 			"app/helpers.php"
 		]
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
+	},	"post-update-cmd": [
 			"php artisan clear-compiled",
 			"php artisan optimize"
 		],
