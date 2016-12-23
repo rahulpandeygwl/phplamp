@@ -1,15 +1,13 @@
-<?php
-
-class FilesController extends \BaseController {
+ass FilesController extends \BaseController {
 
     /**
      * Upload the file and store
      * the file path in the DB.
      */
-	public function store()
-	{
+        public function store()
+        {
         // Rules
-        $rules	= array('name' => 'required', 'file' => 'required|max:20000');
+        $rules  = array('name' => 'required', 'file' => 'required|max:20000');
         $messages = array('max' => 'Please make sure the file size is not larger then 20MB');
 
         // Create validation
@@ -40,21 +38,4 @@ class FilesController extends \BaseController {
         }
 
         $upload = new Upload;
-        $upload->user_id = Auth::id();
-        $upload->project_id = Input::get('project_id');
-        $upload->name = Input::get('name');
-        $upload->path = $directory.$filename;
-        $upload->save();
 
-        return Redirect::back();
-	}
-
-    /**
-     * Delete the given file
-     */
-	public function destroy($id)
-	{
-		//
-	}
-
-}
