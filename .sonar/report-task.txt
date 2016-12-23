@@ -1,0 +1,5 @@
+projectKey=ALMDemoProjectForTaskManagernew
+serverUrl=http://172.27.59.137:9000
+dashboardUrl=http://172.27.59.137:9000/dashboard/index/ALMDemoProjectForTaskManagernew
+ceTaskId=AVkrbjWrqlBhF_-MS8ll
+ceTaskUrl=http://172.27.59.137:9000/api/ce/task?id=AVkrbjWrqlBhF_-MS8ll
